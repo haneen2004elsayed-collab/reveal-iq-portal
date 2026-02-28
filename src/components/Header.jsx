@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // استيراد أداة الربط
 
 const Header = () => {
   return (
@@ -17,10 +18,10 @@ const Header = () => {
         Reveal<span style={{ color: '#45b39d' }}>IQ</span>
       </div>
       <ul style={{ display: 'flex', listStyle: 'none', gap: '20px', margin: 0 }}>
-        <li><a href="#" style={{ textDecoration: 'none', color: '#333' }}>Home</a></li>
-        <li><a href="#" style={{ textDecoration: 'none', color: '#333' }}>About</a></li>
-        <li><a href="#" style={{ textDecoration: 'none', color: '#333' }}>Solutions</a></li>
-        <li><a href="#" style={{ textDecoration: 'none', color: '#333' }}>Contact</a></li>
+        <li><Link to="/" style={{ textDecoration: 'none', color: '#333' }}>Home</Link></li>
+        <li><Link to="/about" style={{ textDecoration: 'none', color: '#333' }}>About</Link></li>
+        <li><Link to="#" style={{ textDecoration: 'none', color: '#333' }}>Solutions</Link></li>
+        <li><Link to="#" style={{ textDecoration: 'none', color: '#333' }}>Contact</Link></li>
       </ul>
       <button style={{
         padding: '8px 20px',
