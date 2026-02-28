@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // استيراد أداة الربط لتبديل الصفحات
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -14,23 +14,38 @@ const Header = () => {
       top: 0,
       zIndex: 1000
     }}>
+      {/* الشعار - Logo */}
       <div style={{ fontWeight: 'bold', fontSize: '1.5rem', color: '#1d3557' }}>
         Reveal<span style={{ color: '#45b39d' }}>IQ</span>
       </div>
-      <ul style={{ display: 'flex', listStyle: 'none', gap: '20px', margin: 0 }}>
-        <li><Link to="/" style={{ textDecoration: 'none', color: '#333' }}>Home</Link></li>
-        <li><Link to="/about" style={{ textDecoration: 'none', color: '#333' }}>About</Link></li>
-        {/* الربط بصفحة الحلول الجديدة */}
-        <li><Link to="/solutions" style={{ textDecoration: 'none', color: '#333' }}>Solutions</Link></li>
-        <li><Link to="#" style={{ textDecoration: 'none', color: '#333' }}>Contact</Link></li>
+
+      {/* قائمة الروابط - Navigation Links */}
+      <ul style={{ display: 'flex', listStyle: 'none', gap: '25px', margin: 0, padding: 0 }}>
+        <li>
+          <Link to="/" style={{ textDecoration: 'none', color: '#333', fontWeight: '500' }}>Home</Link>
+        </li>
+        <li>
+          <Link to="/about" style={{ textDecoration: 'none', color: '#333', fontWeight: '500' }}>About</Link>
+        </li>
+        <li>
+          {/* تحديث رابط الحلول */}
+          <Link to="/solutions" style={{ textDecoration: 'none', color: '#333', fontWeight: '500' }}>Solutions</Link>
+        </li>
+        <li>
+          {/* تحديث رابط الاتصال */}
+          <Link to="/contact" style={{ textDecoration: 'none', color: '#333', fontWeight: '500' }}>Contact</Link>
+        </li>
       </ul>
+
+      {/* زر اللغة */}
       <button style={{
         padding: '8px 20px',
         backgroundColor: '#1d3557',
         color: 'white',
         border: 'none',
         borderRadius: '5px',
-        cursor: 'pointer'
+        cursor: 'pointer',
+        fontWeight: 'bold'
       }}>EN/AR</button>
     </nav>
   );
