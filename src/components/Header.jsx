@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // استيراد أداة الربط
+import { Link } from 'react-router-dom'; // استيراد أداة الربط لتبديل الصفحات
 
 const Header = () => {
   return (
@@ -20,7 +20,8 @@ const Header = () => {
       <ul style={{ display: 'flex', listStyle: 'none', gap: '20px', margin: 0 }}>
         <li><Link to="/" style={{ textDecoration: 'none', color: '#333' }}>Home</Link></li>
         <li><Link to="/about" style={{ textDecoration: 'none', color: '#333' }}>About</Link></li>
-        <li><Link to="#" style={{ textDecoration: 'none', color: '#333' }}>Solutions</Link></li>
+        {/* الربط بصفحة الحلول الجديدة */}
+        <li><Link to="/solutions" style={{ textDecoration: 'none', color: '#333' }}>Solutions</Link></li>
         <li><Link to="#" style={{ textDecoration: 'none', color: '#333' }}>Contact</Link></li>
       </ul>
       <button style={{
