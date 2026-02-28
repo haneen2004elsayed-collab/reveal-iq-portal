@@ -33,9 +33,9 @@ const About = () => {
       <section style={{ ...sectionStyle, backgroundColor: '#fdfdfd' }}>
         <h2 style={{ color: '#1d3557', marginBottom: '40px' }}>Platform Objectives</h2>
         <ul style={{ textAlign: 'left', maxWidth: '700px', margin: '0 auto', lineHeight: '2' }}>
-          <li>✅ Establish trust and credibility in digital talent markets.</li>
-          <li>✅ Provide clear positioning of RevealIQ solutions.</li>
-          <li>✅ Deliver comprehensive reporting for better decision making.</li>
+          <li> Establish trust and credibility in digital talent markets.</li>
+          <li> Provide clear positioning of RevealIQ solutions.</li>
+          <li> Deliver comprehensive reporting for better decision making.</li>
         </ul>
       </section>
     </div>
